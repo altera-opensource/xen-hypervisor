@@ -318,6 +318,7 @@ static int queue_poll_cons(struct arm_smmu_queue *q, bool sync, bool wfe)
 
 		if (wfe) {
 			wfe();
+			udelay(delay);
 		} else if (++spin_cnt < ARM_SMMU_CMDQ_SYNC_SPIN_COUNT) {
 			cpu_relax();
 			continue;
