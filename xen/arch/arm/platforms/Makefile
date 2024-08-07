@@ -1,3 +1,4 @@
+obj-$(CONFIG_ALL64_PLAT) += altera-agilex.o
 obj-$(CONFIG_ALL32_PLAT) += vexpress.o
 obj-$(CONFIG_ALL32_PLAT) += brcm.o
 obj-$(CONFIG_ALL32_PLAT) += exynos5.o
